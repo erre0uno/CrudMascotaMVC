@@ -1,0 +1,78 @@
+﻿@model IEnumerable<MVCMascota.Models.Dueno>
+
+@{
+    ViewData["Title"] = "Listado";
+}
+
+<h4><i class="fa-solid fa-user-shield"></i> &nbsp;Propietarios</h4>
+
+<p>
+    <a class="btn btn-success table-btn" asp-action="Create">
+        <i class="fa-solid fa-plus"></i>&nbsp;Nuevo Propietario 
+    </a>
+    
+</p>
+<table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DuenoId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombres)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Apellidos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Correo)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DuenoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombres)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellidos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo)
+            </td>
+            <td>
+                <a class="btn btn-warning table-btn btn-sm" asp-action="Edit" asp-route-id="@item.DuenoId">
+                    <i class="fa-regular fa-pen-to-square"></i>                    
+                </a>  &nbsp;
+                <a class="btn btn-info table-btn btn-sm" asp-action="Details" asp-route-id="@item.DuenoId">
+                    <i class="fa-solid fa-circle-info"></i>
+                </a>  &nbsp;
+                <a class="btn btn-danger table-btn btn-sm" asp-action="Delete" asp-route-id="@item.DuenoId">
+                    <i class="fa-solid fa-trash"></i>
+                </a>  &nbsp;
+                <a class="btn btn-success table-btn btn-sm" asp-action="DetallesListado" asp-route-id="@item.DuenoId">
+                    <i class="fa-solid fa-paw"></i>
+                    Mascotas
+                </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

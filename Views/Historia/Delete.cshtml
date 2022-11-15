@@ -1,0 +1,50 @@
+﻿@model MVCMascota.Models.Historia
+
+@{
+    ViewData["Title"] = "Eliminar";
+}
+
+<h4><i class="fa-regular fa-folder-open"></i> &nbsp;Eliminar</h4>
+
+<h3 style="color: red;"> <i class="fa-solid fa-triangle-exclamation"></i> &nbsp; ¿ Esta seguro de eliminar el registro ?</h3>
+
+<div>
+    <h4>Historia</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaCreacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Diagnostico)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Diagnostico)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Medicamentos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Medicamentos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mascota)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mascota.MascotaId)
+        </dd>
+    </dl>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="HistoriaId" />
+        <button type="submit" class="btn btn-danger">
+            <i class="fa-solid fa-trash"></i> &nbsp;Eliminar 
+        </button>
+        &nbsp;
+        <a class="btn btn-primary table-btn" asp-action="Index">
+            <i class="fa-solid fa-rotate-left"></i> Regresar
+        </a>
+    </form>    
+</div>

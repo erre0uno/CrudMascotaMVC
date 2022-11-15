@@ -1,0 +1,152 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MascotaFeliz
+build_property.RootNamespace = MascotaFeliz
+build_property.ProjectDir = e:\DevData\Sharp\Repos\MVCMascota\MVCMascota\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = e:\DevData\Sharp\Repos\MVCMascota\MVCMascota
+build_property._RazorSourceGeneratorDebug = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Dueno/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Dueno/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Dueno/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Dueno/DetallesListado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9cRGV0YWxsZXNMaXN0YWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Dueno/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Dueno/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRHVlbm9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Historia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Historia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Historia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Historia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Historia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGlzdG9yaWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Mascota/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzY290YVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Mascota/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzY290YVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Mascota/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzY290YVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Mascota/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzY290YVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Mascota/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFzY290YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Medico/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Medico/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Medico/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Medico/DetailsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvXERldGFpbHNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Medico/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Medico/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Visita/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Visita/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Visita/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRhXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Visita/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Visita/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmlzaXRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/DevData/Sharp/Repos/MVCMascota/MVCMascota/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-80mxq70g9t

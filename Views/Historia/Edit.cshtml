@@ -1,0 +1,54 @@
+﻿@model MVCMascota.Models.Historia
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h4><i class="fa-regular fa-folder-open"></i> &nbsp;Editar</h4>
+
+<h4>Historia</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="HistoriaId" />
+            <div class="form-group">
+                <label asp-for="FechaCreacion" class="control-label"></label>
+                <input asp-for="FechaCreacion" class="form-control" readonly />
+                <span asp-validation-for="FechaCreacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Diagnostico" class="control-label"></label>
+                <input asp-for="Diagnostico" class="form-control" />
+                <span asp-validation-for="Diagnostico" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Medicamentos" class="control-label"></label>
+                <input asp-for="Medicamentos" class="form-control" />
+                <span asp-validation-for="Medicamentos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MascotaId" class="control-label"></label>
+                <input asp-for="MascotaId" class="form-control" readonly value="@Model.MascotaId" />
+                <span asp-validation-for="MascotaId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <p></p>
+                <button type="submit" class="btn btn-success" value="Save">
+                    <i class="fa-regular fa-floppy-disk"></i>&nbsp;Guardar
+                </button>
+                &nbsp;&nbsp;
+                <a class="btn btn-primary table-btn" asp-action="Index">
+                    <i class="fa-solid fa-rotate-left"></i>&nbsp;Regresar
+                </a>
+            </div>            
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

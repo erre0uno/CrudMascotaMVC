@@ -1,0 +1,75 @@
+﻿@model MVCMascota.Models.Visita
+
+@{
+    ViewData["Title"] = "Crear Visita";
+}
+
+<h4><i class="fa-solid fa-notes-medical"></i> &nbsp;Crear</h4>
+
+<h4>Visita</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FechaVisita" class="control-label"></label>
+                <input type="datetime" asp-for="FechaVisita" class="form-control" value="@DateTime.Now.ToString()" />
+                <span asp-validation-for="FechaVisita" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Temperatura" class="control-label"></label>
+                <input asp-for="Temperatura" class="form-control" />
+                <span asp-validation-for="Temperatura" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Peso" class="control-label"></label>
+                <input asp-for="Peso" class="form-control" />
+                <span asp-validation-for="Peso" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FrecuenciaCardiaca" class="control-label"></label>
+                <input asp-for="FrecuenciaCardiaca" class="form-control" />
+                <span asp-validation-for="FrecuenciaCardiaca" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FrecuenciaRespiratoria" class="control-label"></label>
+                <input asp-for="FrecuenciaRespiratoria" class="form-control" />
+                <span asp-validation-for="FrecuenciaRespiratoria" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EstadoAnimo" class="control-label"></label>
+                <input asp-for="EstadoAnimo" class="form-control" />
+                <span asp-validation-for="EstadoAnimo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Recomendacion" class="control-label"></label>
+                <input asp-for="Recomendacion" class="form-control" />
+                <span asp-validation-for="Recomendacion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedicoId" class="control-label"></label>
+                <select asp-for="MedicoId" class ="form-control" asp-items="ViewBag.MedicoId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="HistoriaId" class="control-label"></label>
+                <select asp-for="HistoriaId" class ="form-control" asp-items="ViewBag.HistoriaId"></select>
+            </div>
+            <div class="form-group">
+                <p></p>
+                <button type="submit" class="btn btn-success" value="Create">
+                    <i class="fa-regular fa-floppy-disk"></i>&nbsp;Guardar
+                </button>
+                &nbsp;&nbsp;
+                <a class="btn btn-primary table-btn" asp-action="Index">
+                    <i class="fa-solid fa-rotate-left"></i>&nbsp;Regresar
+                </a>                
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

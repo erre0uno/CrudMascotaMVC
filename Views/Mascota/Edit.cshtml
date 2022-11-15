@@ -1,0 +1,63 @@
+﻿@model MVCMascota.Models.Mascota
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h4><i class="fa-solid fa-paw"></i> &nbsp;Editar</h4>
+
+<h4>Mascota</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MascotaId" />
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Color" class="control-label"></label>
+                <input asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Especie" class="control-label"></label>
+                <input asp-for="Especie" class="form-control" />
+                <span asp-validation-for="Especie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Raza" class="control-label"></label>
+                <input asp-for="Raza" class="form-control" />
+                <span asp-validation-for="Raza" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MedicoId" class="control-label"></label>
+                <select asp-for="MedicoId" class="form-control" asp-items="ViewBag.MedicoId"></select>
+                <span asp-validation-for="MedicoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DuenoId" class="control-label"></label>
+                <select asp-for="DuenoId" class="form-control" asp-items="ViewBag.DuenoId"></select>
+                <span asp-validation-for="DuenoId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <p></p>
+                <button type="submit" class="btn btn-success" value="Save">
+                    <i class="fa-regular fa-floppy-disk"></i>&nbsp;Guardar
+                </button>
+                &nbsp;&nbsp;
+                <a class="btn btn-primary table-btn" asp-action="Index">
+                    <i class="fa-solid fa-rotate-left"></i>&nbsp;Regresar
+                </a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

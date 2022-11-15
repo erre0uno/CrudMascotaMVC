@@ -1,0 +1,100 @@
+﻿@model MVCMascota.Models.Medico
+
+@{
+    ViewData["Title"] = "Detalles Mascotas";
+    var verificarlist = @Model.Mascota.Where(m => m.MedicoId == Model.MedicoId);
+
+}
+
+<h4><i class="fa-solid fa-user-doctor"></i> &nbsp;Detalles</h4>
+
+<div>
+    <h4>Veterinario</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombres)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombres)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Apellidos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Apellidos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tarjeta)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tarjeta)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-primary table-btn" asp-action="Edit" asp-route-id="@Model?.MedicoId">
+        <i class="fa-regular fa-pen-to-square"></i>&nbsp;Editar
+    </a>                &nbsp;&nbsp;
+    <a class="btn btn-primary table-btn" asp-action="Index">
+        <i class="fa-solid fa-rotate-left"></i>&nbsp;Regresar
+    </a>    
+</div>
+
+
+@if(verificarlist.Count() > 0){
+    
+<div>
+    <h4 style=" color:green;">
+        <i class="fa-solid fa-paw"></i> &nbsp; Mascotas Asignadas
+    </h4>
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Color</th>
+                <th>Especie</th>
+                <th>Raza</th>
+                <th>Dueno id</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mascota in @Model.Mascota.Where(m => m.MedicoId == Model.MedicoId)) 
+            {
+                <tr>
+                    <td>@mascota.MascotaId </td>
+                    <td>@mascota.Nombre </td>
+                    <td>@mascota.Color </td>
+                    <td>@mascota.Especie </td>
+                    <td>@mascota.Raza </td>
+                    <td>@mascota.DuenoId </td>
+                    <td>
+                        <a class="btn btn-info table-btn btn-sm" asp-action="Details" asp-controller="Mascota" asp-route-id="@mascota.MascotaId">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </a>                  
+                    </td>               
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+}else
+{
+    <hr /><h3> El medico @Model.Nombres @Model.Apellidos no tiene mascotas asignadas</h3>
+}

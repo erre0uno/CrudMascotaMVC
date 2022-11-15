@@ -1,0 +1,91 @@
+﻿@model IEnumerable<MVCMascota.Models.Visita>
+
+@{
+    ViewData["Title"] = "Listado";
+}
+
+<div class="container-fluid">
+
+    <h4><i class="fa-solid fa-notes-medical"></i> &nbsp;Visitas</h4>
+
+    <p>
+        <a class="btn btn-success table-btn" asp-action="Create">
+            <i class="fa-solid fa-plus"></i>&nbsp;Nueva Visita
+        </a>
+    </p>
+
+
+    <table class="table table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>
+                    <i class="fa-regular fa-calendar-days"></i> &nbsp;Fecha Visita
+                </th>
+                <th>
+                    <i class="fa-solid fa-temperature-high"></i>
+                </th>
+                <th>
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </th>
+                <th>
+                    <i class="fa-solid fa-heart-circle-bolt"></i>
+                </th>
+                <th>
+                    <i class="fa-solid fa-lungs"></i>
+                </th>
+                <th>
+                    <i class="fa-solid fa-house-medical-flag"></i>
+                </th>
+                <th>
+                    <i class="fa-regular fa-folder-open"></i>
+                </th>
+                <th>
+                    <i class="fa-solid fa-user-doctor"></i>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaVisita)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Temperatura)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Peso)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FrecuenciaCardiaca)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FrecuenciaRespiratoria)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EstadoAnimo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Historia.HistoriaId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Medico.MedicoId)
+                    </td>
+                    <td>
+                        <a class="btn btn-warning table-btn btn-sm" asp-action="Edit" asp-route-id="@item.VisitaId">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </a> &nbsp;
+                        <a class="btn btn-info table-btn btn-sm" asp-action="Details" asp-route-id="@item.VisitaId">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </a> &nbsp;
+                        <a class="btn btn-danger table-btn btn-sm" asp-action="Delete" asp-route-id="@item.VisitaId">
+                            <i class="fa-solid fa-trash"></i>
+                        </a> &nbsp;
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

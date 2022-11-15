@@ -1,0 +1,80 @@
+﻿@model IEnumerable<MVCMascota.Models.Mascota>
+
+@{
+    ViewData["Title"] = "Listado";
+}
+
+<h4><i class="fa-solid fa-paw"></i> &nbsp;Mascotas</h4>
+
+<p>
+    <a class="btn btn-success table-btn" asp-action="Create">
+        <i class="fa-solid fa-plus"></i>&nbsp;Nueva Mascota 
+    </a>
+</p>
+<table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MascotaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Color)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Especie)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Raza)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dueno)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medico)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MascotaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Especie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Raza)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dueno.DuenoId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medico.MedicoId)
+            </td>
+            <td>
+                <a class="btn btn-warning table-btn btn-sm" asp-action="Edit" asp-route-id="@item.MascotaId">
+                    <i class="fa-regular fa-pen-to-square"></i>                    
+                </a>  &nbsp;
+                <a class="btn btn-info table-btn btn-sm" asp-action="Details" asp-route-id="@item.MascotaId">
+                    <i class="fa-solid fa-circle-info"></i>
+                </a>  &nbsp;
+                <a class="btn btn-danger table-btn btn-sm" asp-action="Delete" asp-route-id="@item.MascotaId">
+                    <i class="fa-solid fa-trash"></i>
+                </a>  &nbsp;
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,73 @@
+﻿@model IEnumerable<MVCMascota.Models.Historia>
+
+@{
+    ViewData["Title"] = "Listado";
+}
+
+<h4><i class="fa-regular fa-folder-open"></i> &nbsp;Historias</h4>
+
+<p>
+    <a class="btn btn-success table-btn" asp-action="Create">
+        <i class="fa-solid fa-plus"></i>&nbsp;Nueva Historia 
+    </a>
+</p>
+<table class="table table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HistoriaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaCreacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mascota.MascotaId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mascota.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Diagnostico)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Medicamentos)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HistoriaId)
+            </td>            
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCreacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mascota.MascotaId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mascota.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Diagnostico)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medicamentos)
+            </td>
+            <td>
+                <a class="btn btn-warning table-btn btn-sm" asp-action="Edit" asp-route-id="@item.HistoriaId">
+                    <i class="fa-regular fa-pen-to-square"></i>                    
+                </a>  &nbsp;
+                <a class="btn btn-info table-btn btn-sm" asp-action="Details" asp-route-id="@item.HistoriaId">
+                    <i class="fa-solid fa-circle-info"></i>
+                </a>  &nbsp;
+                <a class="btn btn-danger table-btn btn-sm" asp-action="Delete" asp-route-id="@item.HistoriaId">
+                    <i class="fa-solid fa-trash"></i>
+                </a>  &nbsp;
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,46 @@
+﻿@model MVCMascota.Models.Historia
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<h4><i class="fa-regular fa-folder-open"></i> &nbsp;Detalles</h4>
+
+<div>
+    <h4>Historia</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaCreacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FechaCreacion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Diagnostico)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Diagnostico)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Medicamentos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Medicamentos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mascota)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mascota.MascotaId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-primary table-btn" asp-action="Edit" asp-route-id="@Model?.HistoriaId">
+        <i class="fa-regular fa-pen-to-square"></i>&nbsp;Editar
+    </a> &nbsp;&nbsp;
+    <a class="btn btn-primary table-btn" asp-action="Index">
+        <i class="fa-solid fa-rotate-left"></i>&nbsp;Regresar
+    </a>    
+</div>
